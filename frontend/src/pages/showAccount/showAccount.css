@@ -1,0 +1,134 @@
+.transaction {
+  width: 80%;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+.tableContainerGlobal {
+  display: flex;
+  gap: 40%;
+  width: 95%;
+  padding-left: 10px;
+  @media (max-width: 800px) {
+    gap: 25%;
+  }
+}
+
+.tableContainer1-2,
+.tableContainer3-4 {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .tableContainer3-4 {
+    align-items: center;
+  }
+  .tableContainer1-2 p,
+  .tableContainer3-4 p {
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+  }
+}
+
+.tableContainer3-4 {
+  width: 30%;
+}
+
+.tableColumn1 {
+  width: 15%;
+}
+
+.tableColumn2 {
+  width: 35%;
+}
+
+.tableColumn3 {
+  width: 30%;
+}
+
+.tableColumn4 {
+  width: 20%;
+}
+
+@media (max-width: 600px) {
+  .tableColumn3,
+  .tableColumn4 {
+    width: 50%;
+  }
+}
+
+.tableColumn5 {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableColumn1,
+.tableColumn2 {
+  text-align: left;
+}
+.tableColumn3,
+.tableColumn4 {
+  text-align: center;
+}
+
+.tableHeader {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.tableBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+summary {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.table-row-body {
+  background-color: rgb(129, 207, 129);
+  color: white;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.table-row-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.tableTransactionInfos {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 5px;
+}
+
+.tableTransactionInfos .tableColumn2 {
+  text-align: left;
+}
+
+.tableTransactionInfos select,
+.tableTransactionInfos input {
+  border: none;
+  padding: none;
+  height: 100%;
+  width: auto;
+  color: white;
+  background-color: rgb(129, 207, 129);
+  appearance: none;
+}
