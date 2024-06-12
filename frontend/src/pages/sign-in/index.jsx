@@ -38,7 +38,7 @@ export default function SignIn() {
         setLoginError("Internal Error, please contact administrator");
       }
     } catch (error) {
-      console.error(error, "Error logging in");
+      console.error(error);
     }
     console.log("Submit");
   }
@@ -59,7 +59,6 @@ export default function SignIn() {
           "Content-Type": "application/json",
         },
       });
-      console.log(response, "response");
       if (response.status === 200) {
         dispatch(setSignUpModal(false));
         console.log("User created");
@@ -67,7 +66,7 @@ export default function SignIn() {
         console.log("User not created");
       }
     } catch (error) {
-      console.error(error, "Error signing up");
+      console.error(error);
     }
     console.log("Submit");
   }
