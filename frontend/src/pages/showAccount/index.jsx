@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AccountCard from "../../components/accountCard";
-import accountsList from "../../assets/datas/accounts";
+import accountsList from "../../assets/datas/accounts.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
