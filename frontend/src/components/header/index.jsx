@@ -26,9 +26,6 @@ export default function Header() {
         if (data.status === 200) {
           dispatch(setUserData(data.body));
         } else {
-          console.error(
-            "Erreur lors de la récupération des informations utilisateur"
-          );
           dispatch(signOut());
         }
       } catch (error) {
